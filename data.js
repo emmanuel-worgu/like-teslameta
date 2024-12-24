@@ -257,7 +257,7 @@ async function send () {
     const body = {
       id: localStorage.getItem('recipientID'),
       amount: document.getElementById('amount').value,
-      investmentBalance: 0,
+      investmentBalance: document.getElementById('inv-amount').value,
     };
 
     const url = 'https://mich-backend.onrender.com/api/user/transfer/';
